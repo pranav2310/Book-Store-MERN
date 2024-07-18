@@ -15,7 +15,7 @@ const Home = () => {
     useEffect(() => {
         setLoading(true);
         axios
-            .get('http://book-store-mern-api-kappa.vercel.app')
+            .get('http://book-store-mern-api-kappa.vercel.app/books')
             .then((response) => {
                 setBooks(response.data.data);
                 setLoading(false);
