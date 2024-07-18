@@ -13,7 +13,7 @@ const ShowBook = () => {
   useEffect(()=>{
     setLoading(true);
     axios
-    .get(`http://localhost:5555/books/${id}`)
+    .get(`http://book-store-mern-api-kappa.vercel.app/books/${id}`)
     .then((respose)=>{
       setBook(respose.data);
       setLoading(false);
