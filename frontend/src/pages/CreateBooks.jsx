@@ -20,7 +20,7 @@ const CreateBooks = () => {
     }
     setLoading(true);
     axios
-      .post('http://localhost:5555/books', data)
+      .post('http://book-store-mern-api-kappa.vercel.app/books', data)
       .then(()=>{
         setLoading(false)
         enqueueSnackbar('Book created successfully', {variant:'success'})
