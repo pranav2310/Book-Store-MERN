@@ -15,7 +15,7 @@ const EditBook = () => {
   const {enqueueSnackbar} = useSnackbar() 
   useEffect(()=>{
     setLoading(true)
-    axios.get(`http://localhost:5555/books/${id}`)
+    axios.get(`http://book-store-mern-api-kappa.vercel.app/books/${id}`)
       .then((response)=>{
         setAuthor(response.data.author)
         setTitle(response.data.title)
